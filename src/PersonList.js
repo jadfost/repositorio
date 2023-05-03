@@ -35,7 +35,19 @@ function ListaPersonas() {
   event.target.reset();
   }
   
-  
+  return (
+  <div className="person-list">
+  <h1>Lista de Personas</h1>
+  <form onSubmit={manejarEnvio}>
+  <input type="text" name="nombre" placeholder="Nombre" />
+  <input type="text" name="apellido" placeholder="Apellido" />
+  <input type="number" name="edad" placeholder="Edad" />
+  <input type="text" name="id" placeholder="Cedula" />
+  <button type="submit">Agregar Persona</button>
+  </form>
+ 
+  </div>
+  );
   }
   
   export default ListaPersonas;
