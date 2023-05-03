@@ -23,6 +23,18 @@ function ListaPersonas() {
   return personas.filter(persona => persona.edad < 18).length;
   }
   
+  const manejarEnvio = (event) => {
+  event.preventDefault();
+  const persona = {
+  nombre: event.target.nombre.value,
+  apellido: event.target.apellido.value,
+  edad: parseInt(event.target.edad.value),
+  id: event.target.id.value,
+  };
+  agregarPersona(persona);
+  event.target.reset();
+  }
+  
   
   }
   
