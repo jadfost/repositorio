@@ -18,4 +18,13 @@
     flex-direction: column;
   }
   
- 
+  .person-list input[type="text"],
+  .person-list input[type="number"] {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
