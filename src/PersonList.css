@@ -47,3 +47,10 @@
     background-color: #005ea6;
   }
   
+  .person-list ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  
