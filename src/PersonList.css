@@ -13,4 +13,9 @@
     color: #0077be;
   }
   
+  .person-list form {
+    display: flex;
+    flex-direction: column;
+  }
   
+ 
