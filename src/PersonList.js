@@ -53,7 +53,8 @@ function ListaPersonas() {
   </li>
   ))}
   </ul>
-  
+  <p>Adultos: {contarAdultos()}</p>
+  <p>Menores: {contarMenores()}</p>
   </div>
   );
   }
