@@ -77,4 +77,13 @@
     cursor: pointer;
   }
   
+  .person-list li button:hover {
+    background-color: #c0392b;
+  }
   
+  .person-list p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #0077be;
+  }  
