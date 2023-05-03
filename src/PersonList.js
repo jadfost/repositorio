@@ -15,6 +15,10 @@ function ListaPersonas() {
   setPersonas(nuevasPersonas);
   }
   
+  const contarAdultos = () => {
+  return personas.filter(persona => persona.edad >= 18).length;
+  }
+  
   
   }
   
