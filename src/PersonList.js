@@ -45,7 +45,15 @@ function ListaPersonas() {
   <input type="text" name="id" placeholder="Cedula" />
   <button type="submit">Agregar Persona</button>
   </form>
- 
+  <ul>
+  {personas.map((persona, index) => (
+  <li key={persona.id}>
+  (CC. {persona.id}) {persona.nombre} {persona.apellido} ({persona.edad} años)
+  <button onClick={() => eliminarPersona(index)}>Eliminar</button>
+  </li>
+  ))}
+  </ul>
+  
   </div>
   );
   }
