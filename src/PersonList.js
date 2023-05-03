@@ -9,6 +9,12 @@ function ListaPersonas() {
   setPersonas([...personas, persona]);
   }
   
+  const eliminarPersona = (index) => {
+  const nuevasPersonas = [...personas];
+  nuevasPersonas.splice(index, 1);
+  setPersonas(nuevasPersonas);
+  }
+  
   
   }
   
