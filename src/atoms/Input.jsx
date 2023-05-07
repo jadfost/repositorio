@@ -1,11 +1,12 @@
 import React from 'react';
+import './Input.css'; // importar archivo CSS personalizado
 
-const Input = (props) => {
-  const { label, name, type, value, onChange } = props;
+const Input = ({ label, name, type, value, onChange }) => {
   return (
-    <div>
-      <label htmlFor={name}>{label}</label>
+    <div className="input-container">
+      <label className="label" htmlFor={name}>{label}</label>
       <input
+        className="input"
         type={type}
         id={name}
         name={name}

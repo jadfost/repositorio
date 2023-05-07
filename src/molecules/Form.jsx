@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Input from '../atoms/Input';
 import Button from '../atoms/Button';
+import './Form.css';
 
 const Form = (props) => {
   const { onSubmit } = props;
@@ -24,7 +25,7 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <Input
         label="Nombre"
         name="name"
@@ -53,7 +54,7 @@ const Form = (props) => {
         value={idNumber}
         onChange={(e) => setIdNumber(e.target.value)}
       />
-      <Button text="Agregar" type="submit" />
+      <Button text="Agregar" type="submit" className="form-button" />
     </form>
   );
 };

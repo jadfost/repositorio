@@ -1,9 +1,10 @@
 import React from 'react';
+import './Text.css';
 
 const Text = (props) => {
   const { text } = props;
   return (
-    <p>
+    <p className="text">
       {text}
     </p>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import Text from '../atoms/Text';
 import Button from '../atoms/Button';
+import './Table.css';
 
 const Table = (props) => {
   const { data, onDelete } = props;
@@ -21,7 +22,7 @@ const Table = (props) => {
 
   return (
     <div>
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th>Nombre</th>
