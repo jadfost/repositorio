@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from '../molecules/Form';
 import Table from '../molecules/Table';
+import './PersonList.css';
 
 const PersonList = () => {
   const [people, setPeople] = useState([]);
@@ -15,7 +16,7 @@ const PersonList = () => {
 
   return (
     <div>
-      <h1>Lista de personas</h1>
+      <h1 className="person-list-heading">Lista de personas</h1>
       <Form onSubmit={handleAddPerson} />
       <Table data={people} onDelete={handleDeletePerson} />
     </div>
