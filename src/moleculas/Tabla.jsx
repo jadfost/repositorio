@@ -22,6 +22,10 @@ const Tabla = (props) => {
 
   return (
     <div>
+      <div>
+        <Texto texto={`Mayores de edad: ${numMayores}`} />
+        <Texto texto={`Menores de edad: ${numMenores}`} />
+      </div>
       <table className="table">
         <thead>
           <tr>
@@ -36,10 +40,6 @@ const Tabla = (props) => {
           {filas}
         </tbody>
       </table>
-      <div>
-        <Texto texto={`Mayores de edad: ${numMayores}`} />
-        <Texto texto={`Menores de edad: ${numMenores}`} />
-      </div>
     </div>
   );
 };
