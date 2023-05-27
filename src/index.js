@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PersonListPage from './Pages/PersonListPage';
+import PaginaListaPersonas from './paginas/PaginaListaPersonas';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PersonListPage />
+    <PaginaListaPersonas />
   </React.StrictMode>,
   document.getElementById('root')
 );
